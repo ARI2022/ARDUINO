@@ -11,21 +11,23 @@
 //"""""""""""""""""""""""""""""""""""" INCLUDE """""""""""""""""""""""""""""""""""""""""
 
 
-
-
 //"""""""""""""""""""""""""""""""""""" VARIABLES """""""""""""""""""""""""""""""""""""""
-
-byte y1 = 0;
-byte y2 = 100;
-byte y3 = 200;
 
 
 //""""""""""""""""""""""""""""""""""""" SETUP """"""""""""""""""""""""""""""""""""""""""
 
 void setup() 
 {
-Serial.begin(9600);                         
-                                       
+Serial.begin(9600); 
+                        
+Serial.println("Escull el muero de l'operació que vols realitzar?");
+delay(1000); 
+Serial.println("1. Comprovar numero de tarjeta de credit");
+delay(1000);
+Serial.println("2. Comprovar numero de compte bancari");
+delay(1000);
+Serial.println("3. Buscar un digit perdut de tarjeta de credit");
+delay(1000);                                    
 }
 
 
@@ -33,15 +35,7 @@ Serial.begin(9600);
  
 void loop() {                                         
 
-Serial.print(y1);
-Serial.print("\t"); // a space ' ' or tab '\t' character is needed.
-Serial.print(y2);
-Serial.print("\t"); // a space ' ' or tab '\t' character is needed.
-Serial.println(y3); // the last value is followed by a newline characters
-y1 = y1 + 5;
-y2 = y2 + 2;
-y3 = y3 + 1;
-delay(100);                                       
+                                     
 }
 
 
