@@ -1,7 +1,7 @@
 /*""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""                                                                                    ""
 ""                                                                                    "" 
-""                                 TÍTOL: xxxxxxxxxxx                                 ""
+""                                 TÍTOL: HELLO WORLD                                 ""
 ""                                 GABRIEL JAN IWAN                                   ""
 ""                                                                                    ""
 ""                                                                                    ""
@@ -15,14 +15,25 @@
 
 //"""""""""""""""""""""""""""""""""""" VARIABLES """""""""""""""""""""""""""""""""""""""
 
-
+  int a = 3;
+  int b = 2;
+  int d;
 
 
 //""""""""""""""""""""""""""""""""""""" SETUP """"""""""""""""""""""""""""""""""""""""""
 
-void setup()                                           // CONFIGURA EL FINAL DE SORTIDA
+void setup()                                 // CONFIGURA EL FINAL DE SORTIDA 
 {
-                         
+  Serial.begin(9600); // set up Serial library at 9600 bps
+  Serial.println("Here is division: ");
+  Serial.print("a = ");
+  Serial.println(a);
+  Serial.print("b = ");
+  Serial.println(b);
+  d = a / b;
+  Serial.print("a / b = ");
+  Serial.println(d);
+                  
 
                                        
 }
@@ -30,7 +41,7 @@ void setup()                                           // CONFIGURA EL FINAL DE 
 
 //""""""""""""""""""""""""""""""""""""" LOOP """""""""""""""""""""""""""""""""""""""""""
  
-void loop() {                                         //INICIA EL PROGRAMA EN BUCLE
+void loop() {                                          //INICIA EL PROGRAMA EN BUCLE
 
                                        
 }
