@@ -15,27 +15,25 @@
 
 //"""""""""""""""""""""""""""""""""""" VARIABLES """""""""""""""""""""""""""""""""""""""
 
-int comptar = 11;
-int i = 0;
+  int comptar = 11;
+  int i = 0;
 
 //""""""""""""""""""""""""""""""""""""" SETUP """"""""""""""""""""""""""""""""""""""""""
 
 void setup()                                 // CONFIGURA EL FINAL DE SORTIDA 
 {
-  
-  Serial.begin(9600); 
-  Serial.print("Ara comptare de 0 a ");
-  Serial.println(comptar);
-
-  while (i <= comptar)
-    {
-      Serial.print(i);
-      Serial.print(" - ");
-
-    }
-                              
+                  
+Serial.begin(9600); // set up Serial library at 9600 bps
+Serial.print("Ara comptare de 0 a ");
+Serial.println(comptar);
+while(i <= comptar)
+{
+Serial.print(i);
+Serial.print("-");
+i++;
 }
-
+                                       
+}
 
 
 //""""""""""""""""""""""""""""""""""""" LOOP """""""""""""""""""""""""""""""""""""""""""
